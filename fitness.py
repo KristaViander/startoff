@@ -59,7 +59,10 @@ def lapsen_rasvaprosentti(bmi, ika, sukupuoli):
         float: kehon rasvaprosentti (lapsi)
     """
     rasvaprosentti = 1.51 * bmi - 0.7 * ika - 3.6 * sukupuoli + 1.4
+    rasvaprosentti = round(rasvaprosentti)
     return rasvaprosentti
+
+    
 
 
 oma_bmi = laske_bmi(paino, pituus)
