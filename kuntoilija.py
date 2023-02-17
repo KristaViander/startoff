@@ -24,33 +24,36 @@ class Kuntoilija:
         return self.rasvaprosentti
 
     # Metodi rasvaprosentin laskemiseen USA:n armeijan metodeilla
-    def usa_rasvaprosentti_mies(self, vyotaron_ymparys, kaulan_ymparys):
-        """_summary_
+    def usa_rasvaprosentti_mies(self, pituus, vyotaron_ymparys, kaulan_ymparys):
+        """Laskee miehen rasvaprosentin USA:n armeijan kaavalla
 
         Args:
-            vyotaron_ymparys (_type_): _description_
-            kaulan_ymparys (_type_): _description_
+            pituus (float): pituus (cm)
+            vyotaron_ymparys (float): vyötärön ympärysmitta (cm)
+            kaulan_ymparys (float): kaulan ympärysmitta (cm)
 
         Returns:
-            _type_: _description_
+            float: rasvaprosentti
         """
 
-        usa_rasvaprosentti = 0
-        return self.rasvaprosentti
+        usa_rasvaprosentti = fitness.usarasvaprosentti_mies(pituus, vyotaron_ymparys, kaulan_ymparys)
+        return usa_rasvaprosentti
 
-    def usa_rasvaprosentti_nainen(self, vyotaron_ymparys, lantion_ymparys, kaulan_ymparys):
-        """_summary_
+    def usa_rasvaprosentti_nainen(self, pituus, vyotaron_ymparys, lantion_ymparys, kaulan_ymparys):
+        """Laskee kehon rasvaprosentin USA:n armeijan kaavalla
 
         Args:
-            vyotaron_ymparys (_type_): _description_
-            lantion_ymparys (_type_): _description_
-            kaulan_ymparys (_type_): _description_
+            pituus (float): pituus (cm)
+            vyotaron_ymparys (float): vyötärön ympärysmitta (cm)
+            lantion_ymparys (float): lantion ympärysmitta (cm)
+            kaulan_ymparys (float): kaulan ympärysmitta (cm)
 
         Returns:
-            _type_: _description_
+            float: rasvaprosentti
         """
-        usa_rasvaprosentti = 0
-        return self.rasvaprosentti
+        usa_rasvaprosentti = fitness.usarasvaprosentti_nainen(
+            pituus, vyotaron_ymparys, lantion_ymparys, kaulan_ymparys)
+        return usa_rasvaprosentti
 
 # JunioriKuntoilija-luokka Kuntoilija-luokan aliluokka (subclass)
 class JunioriKuntoilija(Kuntoilija):
