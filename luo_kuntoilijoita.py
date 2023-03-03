@@ -33,7 +33,11 @@ def ask_user(question):
 
 # Enter infromation about an athlete
 nimi = input('Nimi: ')
+
+# Use ask_user function to get height and convert it into float
 answer = ask_user('Pituus (cm) ')
+
+# Read the 1st element of the tuple containing height value
 pituus = answer[0]
 
 answer = ask_user('Paino (kg) ')
