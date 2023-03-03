@@ -30,4 +30,4 @@ def test_naisen_usa_rasvaprosentti():
 
 def test_miehen_usa_rasvaprosentti():
     assert round(fitness.usarasvaprosentti_mies(171, 91, 38)) == 22
-    assert round(fitness.usarasvaprosentti_mies(170,120, 42)) == 32
+    assert round(fitness.usarasvaprosentti_mies(170, 120, 42)) == 37

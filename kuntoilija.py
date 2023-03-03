@@ -30,6 +30,7 @@ class Kuntoilija:
         Args:
             pituus (float): pituus (cm)
             vyotaron_ymparys (float): vyötärön ympärysmitta (cm)
+            lantion_ymparys (float): lantion ympärysmitta (cm)
             kaulan_ymparys (float): kaulan ympärysmitta (cm)
 
         Returns:
