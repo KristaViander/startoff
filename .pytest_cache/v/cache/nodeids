@@ -1,0 +1,7 @@
+[
+  "test_fitness.py::test_aikuisen_rasvaprosentti",
+  "test_fitness.py::test_lapsen_rasvaprosentti",
+  "test_fitness.py::test_laske_bmi",
+  "test_fitness.py::test_miehen_usa_rasvaprosentti",
+  "test_fitness.py::test_naisen_usa_rasvaprosentti"
+]
