@@ -26,7 +26,7 @@ class Question():
             
             while True:
                 answer_txt = input(self.question)
-
+                # TODO: Add a routine to change , to . if user types the wrong symbol
                 # Let's try to convert input to numeric
                 try:
                     answer = float(answer_txt)
