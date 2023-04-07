@@ -188,7 +188,7 @@ class Question():
 if __name__ == "__main__":
 
     # Let's ask the weight and convert answer to a floating point number
-    answer_and_error = Question.ask_user_float(
+    """ answer_and_error = Question.ask_user_float(
         'Kuinka paljon painat: ', True)
     print(answer_and_error)
 
@@ -201,6 +201,10 @@ if __name__ == "__main__":
     print(answer_and_error)
 
     gender_dictionary = {'tyttö': 0, 'poika': 1, 'mies': 1, 'nainen': 0}
-
+    
     answer_and_error = Question.ask_user_dictionary('Sukupuoli: ', gender_dictionary, False)
+    print(answer_and_error) """
+
+    gender_dictionary = {'1': 1, '0': 0}
+    answer_and_error = Question.ask_user_dictionary('Sukupuoli 1 mies, 0 nainen',gender_dictionary, False)
     print(answer_and_error)
